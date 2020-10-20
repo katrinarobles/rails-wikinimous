@@ -1,0 +1,26 @@
+@import "bootstrap/scss/bootstrap";
+.container {
+  width: 500px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+   &:hover {
+     background-color: grey;
+     color: white;
+     text-decoration: none;
+     border-radius: 12px;
+     padding: 10px;
+    }
+}
+
+ul {
+  list-style-type: none
+}
+
+p.content {
+  font-style: italic;
+}

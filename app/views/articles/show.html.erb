@@ -1,0 +1,15 @@
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1">Wikinimous</span>
+  <p><%= link_to 'Back to Main', articles_path %></p>
+</nav>
+<div class="container">
+<h2><%= @article.title %></h2>
+  <p class="content"><%= @article.content %></p>
+  <p>Article made: <%= @article.created_at %></p>
+  <p><%= link_to edit_path(@article) do %>
+         <i class="far fa-edit"></i>
+        <% end %>
+         <%= link_to article_path(@article), method: :delete, data: { confirm: "Are you sure you would like to delete?" } do %>
+         <i class="far fa-trash-alt"></i>
+        <% end %></p>
+</div>
